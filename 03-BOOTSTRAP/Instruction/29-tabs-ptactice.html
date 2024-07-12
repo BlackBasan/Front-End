@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabs Practice</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+    
+    <div class="container">
+      <div class="nav nav-pills">
+
+        <button 
+          class="nav-link active" 
+          data-bs-target = "#nature"
+          data-bs-toggle="pill"
+          >
+            Nature
+        </button>
+
+        <button 
+          class="nav-link" 
+          data-bs-target = "#cars"
+          data-bs-toggle="pill"
+          >
+            Cars
+        </button>
+
+      </div>
+      <div class="tab-content">
+
+        <div class="tab-pane show " id="nature">
+          <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-2">
+              <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmF0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&w=900&q=60" alt=""
+              class="img-thumbnail h-100"
+              >
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2">
+              <img src="https://images.unsplash.com/photo-1426604966848-d7adac402bff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bmF0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&w=900&q=60" class="img-thumbnail h-100" alt="">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2">
+              <img src="https://images.unsplash.com/photo-1465146344425-f00d5f5c8f07?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=900&q=60" class="img-thumbnail h-100" alt="">
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="tab-pane show " id="cars">
+          <div class="row">
+            <div class="col-sm-6 col-md-4 col-lg-2">
+              <img src="
+              https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" class="img-thumbnail h-100" alt="">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2">
+              <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" class="img-thumbnail h-100" alt="">
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-2">
+              <img src="https://images.unsplash.com/photo-1583121274602-3e2820c69888?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60" class="img-thumbnail h-100" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+</body>
+</html>

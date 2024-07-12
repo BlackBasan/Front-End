@@ -1,0 +1,27 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+
+.container {
+    background-color: black;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box,
+.box1 {
+    width: 100px;
+    height: 100px;
+}
+
+.box {
+    background-color: greenyellow;
+}
+
+.box1 {
+    background-color: red;
+    display: none;
+}

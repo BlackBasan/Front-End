@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = {
+            firstName: "John", 
+            lastName: "Doe",
+            age: 32,
+            salary: 3000,
+            department: {
+                name: "IT", 
+                floor: 4
+            }
+        }
+
+        //1st way 
+        const message1= `${person.firstName} ${person.lastName}, aged ${person.age}, earns $${person.salary} per month`
+        console.log(message1)
+
+        //destructuring method
+
+        const {firstName, lastName, age, salary, department} = person;
+        const {name} = department;
+
+        const message2= `${firstName} ${lastName}, aged ${age}, earns $${salary} per month`
+        console.log(message2)
+        console.log(name)
+
+    </script>
+</body>
+</html>

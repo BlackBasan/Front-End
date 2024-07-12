@@ -1,0 +1,27 @@
+h1 {
+  color: red;
+  text-align: center;
+}
+
+input {
+  width: 300px;
+  height: 30px;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  border: 1px solid red;
+  outline: none;
+}
+
+button {
+  height: 46px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: 1px solid blue;
+  cursor: pointer;
+}
+button:hover {
+  background-color: blue;
+  color: red;
+}
+
+/*# sourceMappingURL=08-partials.css.map */

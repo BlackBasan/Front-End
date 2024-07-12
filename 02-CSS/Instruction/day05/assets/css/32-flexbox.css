@@ -1,0 +1,69 @@
+h1 {
+    color: green;
+    text-align: center;
+}
+
+.container1 {
+    display: flex;
+    height: 500px;
+    background-color: rgb(41, 41, 41);
+    margin-bottom: 2rem;
+    /* flex-direction: column; */
+    align-items: stretch;
+    /* align-items: flex-start; */
+    /* align-items: flex-end; */
+    /* align-items: center; */
+    /* justify-content: flex-start; => default */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+    /* justify-content: space-around; */
+}
+
+.container1 div:nth-child(1) {
+    background-color: aquamarine;
+}
+.container1 div:nth-child(2) {
+    background-color: orange;
+}
+.container1 div:nth-child(3) {
+    background-color: rgb(221, 0, 255);
+}
+.container1 div:nth-child(4) {
+    background-color: red;
+}
+.container1 div:nth-child(5) {
+    background-color: greenyellow;
+}
+
+.container2 {
+    display: flex;
+    height: 500px;
+    background-color: rgb(41, 41, 41);
+    margin-bottom: 2rem;
+    gap: 20px;
+    /* flex-wrap: wrap-reverse; */
+    flex-wrap: wrap;
+}
+
+.container2 div:nth-child(1) {
+    background-color: aquamarine;
+    flex: 3 1 200px;
+}
+.container2 div:nth-child(2) {
+    background-color: orange;
+    flex: 1 0 200px;
+}
+.container2 div:nth-child(3) {
+    background-color: rgb(221, 0, 255);
+    flex: 1;
+}
+.container2 div:nth-child(4) {
+    background-color: red;
+    flex: 1;
+}
+.container2 div:nth-child(5) {
+    background-color: greenyellow;
+    flex: 1;
+}

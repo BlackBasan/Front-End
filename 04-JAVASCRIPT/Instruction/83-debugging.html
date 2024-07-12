@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">Clcik</button>
+    <h2 id="result"></h2>
+    
+    <script>
+
+        const multiply=(num)=>{
+            let result = 0;
+            if(num>3){
+                result=num*3
+            }else{
+                result=num*5
+            }
+            return result;
+        }
+
+        document.getElementById("btn").addEventListener("click", ()=>{
+            let total = 0
+
+            for(let i = 0; i<5; i++){
+                total+=i + multiply(i)
+            }
+            document.getElementById("result").innerText=`The sum is ${total}`
+        })
+    </script>
+</body>
+</html>

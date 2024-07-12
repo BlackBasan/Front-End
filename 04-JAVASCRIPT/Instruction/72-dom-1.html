@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="header">Dom</h1>
+    <p id="parEL" class="parag">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, veritatis?
+    </p>
+
+    <article>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis optio ullam incidunt eum. Culpa omnis modi natus sunt harum odit labore, inventore necessitatibus voluptas voluptatibus repellendus ab magni fuga tempora.
+    </article>
+    <article>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis optio ullam incidunt eum. Culpa omnis modi natus sunt harum odit labore, inventore necessitatibus voluptas voluptatibus repellendus ab magni fuga tempora.
+    </article>
+    <script>
+        
+        document.getElementById("header").innerHTML += "."
+        const articleEl = document.getElementsByTagName("article")[1].innerHTML = "Updated";
+        console.log(articleEl);
+
+        document.getElementsByClassName("parag")[0].innerHTML += "Update"
+    </script>
+</body>
+</html>

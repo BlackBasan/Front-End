@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            const useState = (firstValue) => {
+                let state = firstValue;
+
+                const setState = (newValue, prevValue) => {
+                    if (state === prevValue) return null;
+                    state = newValue;
+                    console.log(state);
+                    console.log("state has been updated");
+                };
+
+                return [state, setState];
+            };
+
+            const [state, setState] = useState(0);
+
+            setState(5);
+
+            console.log(state);
+        </script>
+    </body>
+</html>

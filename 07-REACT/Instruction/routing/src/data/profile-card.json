@@ -1,0 +1,19 @@
+{
+    "title": "Zisan",
+    "location": "Istanbul, Turkey",
+    "imgUrl": "/image/profile.jpg",
+    "statistics": [
+        {
+            "label": "Shot",
+            "value": "8"
+        },
+        {
+            "label": "Followers",
+            "value": "1,048"
+        },
+        {
+            "label": "Following",
+            "value": "200"
+        }
+    ]
+}

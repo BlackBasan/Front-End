@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //VALUE TYPE
+        //in JavaScript strings, numbers,
+        // bigInt and booleans are value type
+        let a = 5;
+        let b =  a;
+
+        console.log( a === b)
+        console.log(a, b)
+        b = 10;
+        console.log(a, b)
+
+        //REF TYPE
+        //in JavaScript Objects {}, and arrays are ref type
+        const student1 = {firstName : "John", lastName: "Doe", age : 13};
+        const student2 = student1;
+
+
+        console.log(student1, student2);
+        student2.firstName = "Jerry";
+
+        console.log(student1, student2);
+
+        console.log(student1 === student2)
+
+        const car1 = {color: "red", brand: "Mercedes"};
+        const car2 = {color: "red", brand: "Mercedes"};
+
+        console.log(car1 === car2) //false
+        console.log(car1 == car2) //false 
+
+        console.log({} == {})
+        console.log([] === [])
+        console.log("abc1" == "abc2")
+
+        
+
+
+
+
+
+
+    </script>
+</body>
+</html>

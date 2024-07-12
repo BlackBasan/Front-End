@@ -1,0 +1,33 @@
+:root {
+    --clr-blue: rgb(0, 148, 20);
+    --clr-orange: rgb(255, 0, 0);
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+.paragraph1 {
+    color: var(--clr-blue);
+}
+
+.paragraph2 {
+    color: var(--clr-blue);
+}
+
+.paragraph3 {
+    color: var(--clr-orange);
+}
+
+.paragraph4 {
+    color: var(--clr-orange);
+}
+
+.paragraph5 {
+    color: var(--clr-blue);
+}
+
+.paragraph6 {
+    color: var(--clr-orange);
+}

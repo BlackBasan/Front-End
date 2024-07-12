@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" placeholder="enter price" id="txtPrice">
+    <button onclick="setPrice()">Calculate</button>
+    <h2 id="result"></h2>
+    <script>
+
+        const txtPrice = document.querySelector("#txtPrice");
+        const resultEl = document.querySelector("#result");
+
+        function setPrice(){
+            let price = Number (txtPrice.value);
+            let discount;
+
+            switch (true){
+                case price >1500:
+                    discount = 15;
+                    break;
+                case price >700:
+                    discount =13;
+                    break;
+                case price >500:
+                    discount =10;
+                    break;
+                case price >300:
+                    discount =5;
+                    break;
+                default:
+                    discount = 2;
+
+            }
+            price =  price - price*discount /100;
+            resultEl.innerHTML = `Discounted price : ${price}`
+        }
+
+    </script>
+</body>
+</html>

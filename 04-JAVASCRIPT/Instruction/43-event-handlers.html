@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="bntHello" onclick="sayHello1()">Click Me</button>
+    <script>
+        //method-1
+        function sayHello1(){
+            console.log("Hello 1")
+        }
+
+        //method-2
+        const sayHello2 =function (){
+            console.log("Hello 2")
+        }
+        document.querySelector("#bntHello").onclick = sayHello2;
+
+
+        //method-3
+        document.querySelector("#bntHello").onclick = function (){
+            console.log("Hello 3")
+        }
+
+        document.querySelector("#bntHello").onclick = () =>{
+            console.log("Hello 4")
+        }
+
+        //method-4
+        const sayHello4 =   function (){
+            console.log("hello 5")
+        }
+        document.querySelector("#bntHello").addEventListener("click", sayHello4)
+
+        //method-5
+
+        document.querySelector("#bntHello").addEventListener("click",  (e)=>{
+            console.log("hello 6")
+            console.log(e.target.innerText)
+        })
+    </script>
+</body>
+</html>

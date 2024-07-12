@@ -1,0 +1,22 @@
+
+@font-face {
+    font-family: 'digital';
+    src: url('../fonts/digital-7.ttf');
+}
+
+.clock{
+    font-family: digital;
+    list-style-type: none;
+    font-size: 3rem;
+    display: inline-flex;
+    background-color: rgb(172, 237, 75);
+    padding: 10px;
+    margin: 0;
+    border-radius: 10px;
+
+}
+
+.second{
+    opacity: 0;
+}
+

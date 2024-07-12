@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id="test1">test1</div>
+    <div id="test2">test2</div>
+
+    <script>
+
+        const employee = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 32,
+            position: "Software Developer",
+            salary: 50000,
+            department: {
+                id: 4,
+                name: "Development Department",
+                location: "New York City"
+            },
+            displayName: function(){
+               return `firstName : ${this.firstName}, lastName: ${this.lastName}`
+            }
+            
+        }
+
+        console.log(employee)
+        console.log(employee.firstName)
+        console.log(employee.department.name)
+
+        console.log(`firstName : ${employee.firstName}, lastName: ${employee.lastName}`)
+
+        console.log(employee.displayName())
+
+        //refers to window object
+        console.log(this)
+
+        const test = function(){
+            console.log(this)
+        }
+        test()
+
+        //when used with expression function gives location of event just like e.target
+        document.querySelector("#test1").addEventListener("click", function(e){
+            console.log(this)
+            console.log(e.target)
+        })
+
+        //when used with arrow function it gives window object
+        document.querySelector("#test2").addEventListener("click", (e)=>{
+            console.log(this)
+            //console.log(e.target)
+        })
+
+
+        console.log(window.document.querySelector)
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@use "variables";
+
+h1 {
+    color: variables.$text-secondary;
+    text-align: center;
+}
+
+input {
+    width: 300px;
+    height: 30px;
+    border-radius: variables.$rounded-sm;
+    padding: variables.$p-sm;
+    border: variables.$border-secondary;
+    outline: none;
+}
+
+button {
+    height: 46px;
+    padding: variables.$p-sm;
+    border-radius: variables.$rounded-sm;
+    border: variables.$border-primary;
+    cursor: pointer;
+
+    &:hover {
+        background-color: variables.$text-primary;
+        color: variables.$text-secondary;
+    }
+}

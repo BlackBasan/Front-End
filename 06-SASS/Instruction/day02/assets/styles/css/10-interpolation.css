@@ -1,0 +1,12 @@
+.icon {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: orangered;
+}
+
+.icon-arrow-down {
+  background-color: aqua;
+}
+
+/*# sourceMappingURL=10-interpolation.css.map */

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <h1>Hello DOM </h1>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, repellat.
+    </p>
+
+    <ul class="menu">
+        <li>Home</li>
+        <li>About Us</li>
+        <li>Contact Us</li>
+    </ul>
+
+    <script>
+
+        //console.log(document)
+        const headingEl = document.querySelector("h1"); //selected element
+        console.log(headingEl.innerText);
+        headingEl.innerText = "<u>Hello JavaScript </u>" // assigned new text 
+        headingEl.innerHTML = "<u>Hello JavaScript </u>";
+
+        const homeEl =  document.querySelector(".menu li:first-child");
+        console.log(homeEl.innerText)
+        homeEl.innerText = "Main"
+
+        const listItems = document.querySelectorAll(".menu li");
+        console.log(listItems);
+        console.log(typeof listItems);
+        console.log(typeof (listItems[0].innerText))
+
+        listItems[1].innerText = "Bla Bla"
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Interpolation</title>
+</head>
+<body>
+    
+    <script>
+        const name = "John";
+        const city = 'Berlin';
+        const className = "text-danger";
+
+        //using backtick we can store multi line string 
+        const par = `jdkjfa fjla sfj
+        alsfjal ksadjfla 
+        ajshfkjasdh
+        kahfjk`
+
+        let html = `
+        <div>
+            <div>Col1</div>
+            <div>Col2</div>
+        </div>
+        `
+        //before backtick/ without using backtick
+        let html2 = '<div>';
+            html2 += '<div>Col1</div>';
+            html2 += '<div>Col2</div>';
+            html2 += '</div>'
+
+        console.log(name, city, par, html)
+
+        //string  concatination
+        console.log("Hello " + name + ". How is weather in "+ city+"?")
+        console.log('<div class="'+className+'">'+name+'</div>');
+
+            //using backtick
+        console.log(`Hello ${name}. How is weather in ${city}?`);
+        console.log(`<div class "${className}">${name}</div>`);
+
+    </script>
+</body>
+</html>

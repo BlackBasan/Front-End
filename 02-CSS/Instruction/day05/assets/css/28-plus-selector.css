@@ -1,0 +1,22 @@
+h1 {
+    color: purple;
+    text-align: center;
+}
+
+div.container h2 {
+    color: orange;
+}
+
+a {
+    text-decoration: none;
+    color: brown;
+    display: inline-block;
+}
+
+div.container + a {
+    color: green;
+}
+
+div.container + a::first-letter {
+    font-size: 3rem;
+}

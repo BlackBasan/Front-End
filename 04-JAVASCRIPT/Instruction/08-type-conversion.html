@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Conversion</title>
+</head>
+<body>
+    
+    <script>
+        
+        const number = "100";
+        const sum1 = number + 22;
+        console.log(sum1, typeof(sum1))
+
+        //Number () converts string number to number
+        const sum2 = Number(number) + 22; //parseInt, parseFloat
+        console.log(sum2, typeof(sum2))
+
+        const lang = "JS";
+        console.log(Number(lang)) //NaN 
+
+        let salary = "2223.4343"
+        const sum3 = parseFloat(salary) + 2; 
+        const sum4 = parseInt(salary) + 3; 
+        const sum5 = Number(salary) + 2
+        console.log(sum3)//2225.4343
+        console.log(sum4)//2226
+        console.log(sum5) //2225.4343
+
+        let number2 = 23;
+
+        // String () is used to convert numbers to string
+        let sum6 = String(number2) + 4;
+        console.log(sum6, typeof(sum6))
+
+    </script>
+</body>
+</html>

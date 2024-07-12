@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+.input-group {
+    position: relative;
+    width: 500px;
+    margin: 0 auto;
+}
+
+.input {
+    height: 50px;
+    width: 100%;
+    font-size: 1.3rem;
+    padding-left: 15px;
+    padding-right: 110px;
+    text-overflow: ellipsis;
+    border-radius: 30px;
+    border: 0;
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
+
+.btnSend {
+    color: rgb(43, 43, 43);
+    background-color: rgb(255, 197, 88);
+    border: none;
+    border-radius: 30px;
+    font-size: 1.3rem;
+    position: absolute;
+    /* curtain */
+    /* bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0; */
+    right: 2px;
+    bottom: 2px;
+    top: 2px;
+    width: 100px;
+    cursor: pointer;
+}

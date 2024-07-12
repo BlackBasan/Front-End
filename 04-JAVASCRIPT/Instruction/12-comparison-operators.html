@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Operators</title>
+</head>
+<body>
+    
+    <script>
+        let x = 1;
+        let y = 10;
+        let z = "1";
+        let k = 20;
+        let l = 0;
+
+        console.log(x>z) //false
+        console.log(x == z) //true
+        console.log(x === z)//false -- same value but different data type
+        console.log(x>=z) //true
+
+        console.log(y>x>=z) //true
+        console.log(k>y>x) //true
+        console.log(y>k>=l) //true
+    </script>
+</body>
+</html>

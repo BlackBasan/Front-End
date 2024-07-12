@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise</title>
+</head>
+<body>
+
+    <button id="btn">Click Me</button>
+
+    <script>
+
+        document.getElementById("btn").addEventListener("click", ()=>{
+
+            confirmAsync("Are you sure to delete?")
+            .then((resp)=>{
+                console.log(resp)
+            })
+
+            console.log("Hello Promise")
+
+        })
+
+
+        const confirmAsync = (msg) => { 
+
+            //Promise is not async, it is used to return data from 
+            //async methods. An alternative for callbacks
+            //it gurantees to return data either true or false
+
+            return new Promise((resolve)=>{
+                setTimeout(()=>{
+                    const result = confirm(msg);
+                    resolve(result);
+                }, 0)
+            })
+        }
+
+    </script>
+    
+</body>
+</html>

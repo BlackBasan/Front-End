@@ -1,0 +1,76 @@
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+.title1 {
+    border: 5px dotted blue;
+}
+
+.title2 {
+    border: 5px dashed purple;
+    display: inline-block;
+    padding: 5px 20px;
+}
+
+.title3 {
+    border-top: 10px solid red;
+    border-bottom: 10px solid red;
+}
+
+.title4 {
+    border: 3px solid orchid;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 30px;
+}
+
+.title5 {
+    border: 3px solid orange;
+    display: inline-block;
+    padding: 5px 15px;
+    border-top-right-radius: 30px;
+}
+
+.title6,
+.title7,
+.title8,
+.title9 {
+    border: 3px solid greenyellow;
+    display: inline-block;
+    margin: 0;
+    width: 200px;
+    height: 50px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.title6 {
+    border-top-left-radius: 30px;
+}
+
+.title7 {
+    border-top-right-radius: 30px;
+}
+
+.title8 {
+    border-bottom-left-radius: 30px;
+}
+
+.title9 {
+    border-bottom-right-radius: 30px;
+}
+
+.sphere-container {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.sphere {
+    width: 50px;
+    height: 50px;
+    background-color: rosybrown;
+    border-radius: 50%;
+}

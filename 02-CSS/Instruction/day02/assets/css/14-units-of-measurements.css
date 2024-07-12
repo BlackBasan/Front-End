@@ -1,0 +1,43 @@
+:root {
+    font-size: 30px;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+}
+
+img {
+    width: 50%;
+}
+
+.container {
+    width: 75%;
+    height: 500px;
+    background-color: red;
+}
+
+.box {
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+}
+
+.container2 {
+    margin-top: 20px;
+    width: 75vw;
+    height: 50vh;
+    background-color: violet;
+}
+
+.text {
+    font-size: 50px;
+}
+
+p {
+    font-size: 2em;
+}
+
+.rem {
+    font-size: 2rem;
+}

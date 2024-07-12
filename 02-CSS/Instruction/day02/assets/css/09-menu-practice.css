@@ -1,0 +1,19 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+
+.menu-container {
+    background-color: rgb(206, 206, 206);
+    width: 150px;
+    text-align: center;
+}
+
+.active {
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+
+.menu-item {
+    text-transform: capitalize;
+}

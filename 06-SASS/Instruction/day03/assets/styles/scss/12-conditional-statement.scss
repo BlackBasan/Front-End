@@ -1,0 +1,9 @@
+@use "mixins" as m;
+
+.square {
+    @include m.avatar(10rem);
+}
+
+.circle {
+    @include m.avatar(10rem, true);
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const user = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 33,   
+        }
+
+        //optional chaining
+        const salary = user.salary?.tax; //if there is a salary do operation, if do not not create any issue
+
+        //using if 
+        // if(user.salary){
+        //     console.log("do something")
+        // }
+
+        console.log(salary)
+
+        console.log("Next codes after salary")
+    </script>
+</body>
+</html>

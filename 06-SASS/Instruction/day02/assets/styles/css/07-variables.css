@@ -1,0 +1,18 @@
+input {
+  background-color: #333;
+  color: #fff;
+}
+
+button {
+  background-color: transparent;
+  color: blue;
+  border: 1px solid blue;
+  cursor: pointer;
+  border-radius: 5px;
+}
+button:hover {
+  background-color: blue;
+  color: #fff;
+}
+
+/*# sourceMappingURL=07-variables.css.map */

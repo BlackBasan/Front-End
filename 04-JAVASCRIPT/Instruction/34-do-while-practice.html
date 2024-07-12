@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="txtNumber" placeholder="enter number">
+    <button onclick="calculateFactorial()">Calculate</button>
+    <h3 id="result"></h3>
+
+    <script>
+        const numberEl = document.querySelector("#txtNumber");
+
+        function calculateFactorial(){
+            let num = Number(numberEl.value);
+            //5= 5*4*3*2*1
+
+            if(num<0){
+                alert("Enter a number greater than 0")
+            }
+
+           // if(!num) num = 1;
+
+            num = num || 1 //shor ciruits
+
+            let factorial = 1;
+
+            do{
+               factorial *= num;//factorial * num 
+                num--;
+            }while(num>1);
+
+            document.querySelector("#result").innerHTML = `The factorial of number is: ${factorial}`
+        }
+    </script>
+
+</body>
+</html>

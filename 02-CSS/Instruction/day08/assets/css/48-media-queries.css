@@ -1,0 +1,41 @@
+h1 {
+    font-size: 3rem;
+    color: #e600ff;
+    text-align: center;
+}
+
+.image-container img {
+    width: 100%;
+}
+
+p {
+    text-align: justify;
+}
+
+@media (min-width: 1200px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .image-container {
+        width: 1200px;
+    }
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
+
+@media print {
+    img {
+        display: none;
+    }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <button>CLICK1</button>
+        <script>
+            const btnEl = document.querySelector("button");
+
+            const handleClickWithoutParameters = () => {
+                alert("Button clicked without parameters");
+            };
+
+            const handleClickWithParameters = (name) => {
+                alert(`Button clicked with parameters: ${name}`);
+            };
+
+            btnEl.addEventListener("click", () => {
+                handleClickWithParameters("A NAME");
+            });
+        </script>
+    </body>
+</html>

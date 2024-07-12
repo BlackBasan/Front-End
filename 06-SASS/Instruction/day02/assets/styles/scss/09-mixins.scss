@@ -1,0 +1,21 @@
+@use "mixins" as m;
+
+.list {
+    @include m.reset-list;
+    color: orangered;
+    margin: 1rem 0;
+}
+
+.flex {
+    @include m.reset-list;
+    @include m.flex;
+}
+
+.flexbox {
+    @include m.reset-list;
+    @include m.flexbox(row, center, center, wrap, 1.5rem);
+}
+
+.avatar {
+    @include m.avatar();
+}

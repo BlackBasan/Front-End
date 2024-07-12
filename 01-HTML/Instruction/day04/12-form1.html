@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>FORM — 1</title>
+    </head>
+    <body>
+        <h1>FORM — 1</h1>
+        <!-- <form method="post" action="api/users" -->
+        <form method="GET" action="#">
+            <!-- <label>Email</label>
+            <input type="text" />
+            <input type="button" value="Save" />
+            <button>Save</button>  -->
+            <br />
+            <br />
+            <label>Username</label>
+            <input
+                type="text"
+                placeholder="Enter your username..."
+                value="MyUsername"
+                name="username" />
+            <br />
+            <br />
+            <label>Email</label>
+            <input
+                type="email"
+                placeholder="Enter your email..."
+                name="email" />
+            <br />
+            <br />
+            <label>Age</label>
+            <input type="number" placeholder="Enter your age..." name="age" />
+            <br />
+            <br />
+            <label>Password</label>
+            <input
+                type="password"
+                placeholder="Enter your password..."
+                name="password" />
+            <br />
+            <br />
+            <label>SEARCH PRODUCTS</label>
+            <input
+                type="text"
+                placeholder="Search what you want..."
+                name="searchText" />
+            <br />
+            <label>SEARCH PRODUCTS</label>
+            <input
+                type="search"
+                placeholder="Search what you want..."
+                name="search" />
+            <br />
+            <br />
+            <label>Website</label>
+            <input type="url" name="website" />
+            <br />
+            <br />
+            <label>Phone Number</label>
+            <input
+                type="tel"
+                name="phoneNumber"
+                pattern="(999)-999-99-99"
+                placeholder="(999)-999-99-99" />
+            <!-- TYPE = HIDDEN -->
+            <input type="hidden" name="role" value="administrator" />
+            <br />
+            <br />
+            <button>SAVE BUTTON</button>
+            <input type="button" name="btnSave" value="SAVE BUTTON" />
+            <input type="reset" name="btnReset" value="RESET FORM CONTENT" />
+            <br />
+            <br />
+            <input type="submit" name="btnSubmit" value="SEND FORM" />
+        </form>
+    </body>
+</html>

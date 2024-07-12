@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: red;
+    font-size: 3rem;
+    margin: 2rem 0;
+}
+
+.dropdown-menu {
+    display: inline-block;
+}
+
+.dropdown-menu button {
+    width: 300px;
+    height: 60px;
+    font-size: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(86, 86, 86);
+    color: white;
+    cursor: pointer;
+}
+
+.dropdown-menu ul {
+    list-style-type: none;
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+}
+
+.dropdown-menu:hover ul {
+    display: block;
+    transition: all 1s ease-in-out;
+}
+
+.dropdown-menu ul li a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-align: center;
+    display: inline-block;
+    background-color: orange;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    color: white;
+}
+
+.dropdown-menu ul li a:hover {
+    background-color: orangered;
+}

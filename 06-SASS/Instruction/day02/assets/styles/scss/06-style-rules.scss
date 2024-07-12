@@ -1,0 +1,60 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+
+// .alert ul,
+// .alert p {
+//     color: red;
+//     background-color: yellowgreen;
+// }
+
+// .warning ul,
+// .warning p {
+//     color: red;
+//     background-color: yellowgreen;
+// }
+
+.alert,
+.warning {
+    ul,
+    p {
+        color: red;
+        background-color: yellowgreen;
+    }
+}
+
+ul {
+    > li {
+        color: blue;
+        background-color: yellow;
+    }
+
+    &:hover {
+        color: violet;
+    }
+}
+
+.warning {
+    &-xl {
+        color: aqua;
+    }
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 200px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+
+    &-fluid {
+        max-width: 100%;
+    }
+
+    &-sm {
+        max-width: 576px;
+    }
+}

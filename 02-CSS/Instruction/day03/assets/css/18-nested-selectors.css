@@ -1,0 +1,16 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+
+li {
+    color: blue;
+}
+
+nav ul li {
+    color: red;
+}
+
+nav.navbar ul li {
+    color: green;
+}

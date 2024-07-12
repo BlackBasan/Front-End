@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="number" placeholder="num1" id="num1">
+    <input type="number" placeholder="num2" id="num2">
+    <button onclick="addNumbers()">Add</button>
+    <button onclick="subtractNumbers()">Substract</button>
+    <button onclick="multiplyNumber()">Multiply</button>
+    <button onclick="divideNumbers()">Divide</button>
+
+    <h1 id="result"></h1>
+
+    <script>
+
+        const num1 = document.querySelector("#num1"); //
+        const num2 = document.querySelector("#num2");
+        const resultEl = document.querySelector("#result");
+
+        function addNumbers(){
+            //const sum = Number( num1.value) + Number(num2.value);
+            const sum = num1.value * 1 + num2.value * 1
+            resultEl.innerHTML = `Result: ${sum}`
+        }
+
+        function multiplyNumber(){
+            const sum = num1.value * num2.value;
+            resultEl.innerHTML = `Result: ${sum}`
+        }
+
+        function subtractNumbers(){
+            const sum = num1.value - num2.value;
+            resultEl.innerHTML = `Result: ${sum}`
+        }
+
+        function divideNumbers(){
+            const sum = (num1.value / num2.value).toFixed(2);
+            resultEl.innerHTML = `Result: ${sum}`
+        }
+
+    </script>
+
+</body>
+</html>

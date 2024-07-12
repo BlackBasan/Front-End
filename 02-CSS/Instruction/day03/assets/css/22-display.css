@@ -1,0 +1,47 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+
+.container {
+    height: 600px;
+    background-color: crimson;
+}
+
+.box1,
+.box2,
+.box3,
+.box4,
+.container a {
+    height: 100px;
+    width: 100px;
+}
+
+.box1 {
+    background-color: blue;
+}
+
+.box2 {
+    background-color: green;
+    color: white;
+    display: inline;
+    display: none;
+}
+
+.box3 {
+    background-color: yellow;
+    display: inline-block;
+    visibility: hidden;
+}
+
+.box4 {
+    background-color: orange;
+    display: inline-block;
+}
+
+.container a {
+    color: white;
+    text-decoration: none;
+    background-color: blueviolet;
+    display: block;
+}

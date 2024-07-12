@@ -1,0 +1,10 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+
+ul {
+    list-style-type: "❤️";
+    list-style-image: url("../img/weather-icon.png");
+    list-style-position: inside;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promise Chain</title>
+</head>
+<body>
+
+    <button id="btn">Click Me</button>
+
+    <script>
+
+        const prom1 = ()=>{
+            return new Promise((resolve, )=>{
+                setTimeout(()=>{
+                    resolve("My promise 1")
+                }, 5000)
+            })
+        }
+
+        const prom2 = ()=>{
+            return new Promise((resolve, reject)=>{
+                setTimeout(()=>{
+                    resolve("My promise 2")
+                    //reject("Error Occured")
+                }, 4000)
+            })
+        }
+
+        const prom3 = ()=>{
+            return new Promise((resolve, )=>{
+                setTimeout(()=>{
+                    resolve("My promise 3")
+                }, 3000)
+            })
+        }
+
+
+        document.getElementById("btn").addEventListener("click", async()=>{
+           
+            console.log("Awaiting.....")
+
+
+            try {
+                const resp1 = await prom1(); //
+                console.log(resp1)
+
+                const resp2 = await prom2(); //
+                console.log(resp2)
+
+                const resp3 = await prom3(); //
+                console.log(resp3)
+                
+            } catch (error) {
+                console.log(error)
+            }
+
+            
+
+            console.log("Hello Promise")
+            
+        })
+
+
+        //using await keyword we can convert fetch to sync
+
+        /*
+
+            const loadData = async() => { 
+            const resp = await fetch("url", "settings")
+            const data  = await resp.json();
+         }
+         */
+
+
+    </script>
+</body>
+</html>

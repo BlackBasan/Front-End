@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number"  id="txtNumber" placeholder="enter number">
+    <button onclick="calculate()">Check</button>
+    <h3 id = "result"></h3>
+    <script>
+        const numberEl = document.querySelector("#txtNumber");
+        const resultEl = document.querySelector("#result");
+
+        //event function
+        function calculate(){
+
+            const num = numberEl.value;
+
+            const result  = isNumberPrime(num) // either true or false
+
+            resultEl.innerHTML = `The number you have entered is ${result ? "" : "not"} prime`
+        }
+
+        //num(true) - numbers except 0, strings, object or array, true
+        //!num(false) ->0, "", undefined, null, NaN, false
+        //isNaN(num) --> isNaN() (is not a number)
+
+        //generic function
+        function isNumberPrime(num){
+
+            //start from geberal check to details
+            if(!num || isNaN(num) || num < 2) return false;
+            //return takes us /returns to the place where the function is called
+
+            let result  = true;
+            //num = 5
+            for(let i = 2; i< num; i++){
+                if(num % i == 0){
+                    result = false;
+                    break; //break the loop
+                }
+            }
+
+            return result;
+
+        }
+    </script>
+</body>
+</html>

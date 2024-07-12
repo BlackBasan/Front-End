@@ -1,0 +1,31 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+
+h1:hover {
+    color: rgb(0, 218, 0);
+    background-color: black;
+}
+
+a {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a:link {
+    color: orangered;
+}
+
+a:visited {
+    color: blueviolet;
+}
+
+a:hover {
+    font-style: italic;
+    color: green;
+}
+
+a:active {
+    color: red;
+}

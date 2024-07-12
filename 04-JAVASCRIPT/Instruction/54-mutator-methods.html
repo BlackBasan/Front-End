@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const cars = ["Porche", "Toyota", "Ferrari"]
+        console.log(cars)
+        
+        //returns length of new arr
+        const arrLength = cars.push("Hyundai")
+        console.log(cars, arrLength)
+
+        //returns removed element
+        const poppedCar =  cars.pop();
+        console.log(cars, poppedCar)
+
+        const shiftedCar = cars.shift();
+        console.log(cars, shiftedCar)
+
+        const newLength = cars.unshift("Honda");
+        console.log(cars, newLength)
+
+        cars.sort()
+        console.log(cars)
+
+        cars.reverse()
+        console.log(cars)
+
+        const ret = cars.splice(1, 0, "Kia", "Tesla")
+        console.log(cars, ret)
+    </script>
+</body>
+</html>

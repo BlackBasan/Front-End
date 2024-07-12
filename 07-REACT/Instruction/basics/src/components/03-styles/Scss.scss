@@ -1,0 +1,33 @@
+$color1: green;
+$color2: blue;
+$color3: red;
+
+.scss-container {
+    margin: 2rem;
+    h1 {
+        color: $color1;
+    }
+
+    #heading {
+        font-style: italic;
+    }
+
+    .list {
+        text-align: center;
+        list-style-type: none;
+        padding: 0;
+
+        li {
+            color: $color2;
+            font-style: italic;
+        }
+    }
+
+    @for $i from 1 through 3 {
+        .article-#{$i} {
+            color: $color3;
+            text-align: center;
+            font-size: calc(10px * $i);
+        }
+    }
+}

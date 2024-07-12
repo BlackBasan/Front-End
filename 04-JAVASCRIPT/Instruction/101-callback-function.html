@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+</head>
+<body>
+
+    <script>
+        const sum = (a, b, cb) => { 
+            setTimeout(()=>{
+                const total = a+b;
+                cb(total)
+            }, 1)
+         }
+         /*
+            issue: We cannot return data directly from async methods, 
+                    because they are running in different threads. 
+            soln: to get data from async function we need 
+                    to use callback functions
+         */
+         
+         const total =  sum(5, 6, (t)=>{
+            console.log(t+8)
+         })
+         
+    </script>
+    
+</body>
+</html>

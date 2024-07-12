@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr = [23, 54, 22, 55, 77, -88, 33]
+
+        //every is like and/&& operator -> all elements must satisfy the condition to be true
+        // if( arr.every((num, i)=>num>0)){
+        //     alert("All elements are positive")
+        // }else{
+        //     alert("at least one element is negative")
+        // }
+
+
+        //some is like or / || operator -> at least one  element must satisfy the condition to be true
+        if( arr.some((num, i)=>num<0)){
+            alert("All elements are negatif")
+        }else{
+            alert("at least one element is positive")
+        }
+
+
+
+    </script>
+</body>
+</html>

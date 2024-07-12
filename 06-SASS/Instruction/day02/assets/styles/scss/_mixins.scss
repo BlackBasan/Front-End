@@ -1,0 +1,32 @@
+@mixin reset-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+@mixin flexbox(
+    $flex-direction: row,
+    $justify-content: flex-start,
+    $align-items: flex-start,
+    $flex-wrap: wrap,
+    $gap: 1rem
+) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    flex-wrap: $flex-wrap;
+    gap: $gap;
+}
+
+@mixin avatar($size: 3rem) {
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+}

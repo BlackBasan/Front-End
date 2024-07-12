@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sync Async</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="p-4">
+      <div
+        id="progress"
+        class="progress"
+        role="progressbar"
+        aria-label="Example with label"
+        aria-valuenow="0"
+        aria-valuemin="0"
+        aria-valuemax="100"
+      >
+        <div id="progressBar" class="progress-bar" style="width: 0%">0%</div>
+      </div>
+
+      <button id="btnLoad" class="btn btn-info mt-4">Load Progress</button>
+      <button id="btnList" class="btn btn-success mt-4">Load List</button>
+
+      <ul id="list"></ul>
+    </div>
+
+    <script>
+      const btnLoad = document.getElementById("btnLoad");
+      const btnList = document.getElementById("btnList");
+      const progressBar = document.getElementById("progressBar")
+      const list = document.getElementById("list")
+
+      const loadBar = () => { 
+        const interval = setInterval(() => {
+            const val = Number(progressBar.parentElement.getAttribute("aria-valuenow")) + 1;
+
+            progressBar.parentElement.setAttribute("aria-valuenow", val)
+
+            progressBar.style.width = `${val}%`;
+            progressBar.innerText = `${val}%`
+
+            if(val>=100){
+                clearInterval(interval);
+            }
+
+            console.log(val)
+
+        }, 50);
+       }
+
+       const fillList = () => { 
+            for(let i = 1; i<=50; i++){
+                let li = document.createElement('li');
+                li.innerText = `Item ${i}`;
+                list.appendChild(li);
+            }
+        }
+
+      btnLoad.addEventListener("click", ()=>{
+        loadBar();
+      })
+
+      btnList.addEventListener("click", ()=>{
+        fillList()
+      })
+
+    </script>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        //declaration or traditional method
+        const result1 = addNums1(5, 9)
+        console.log(result1)
+        function addNums1(a, b){
+            const sum = a+b;
+            return sum;
+        }
+
+        //expression method
+
+        const addNums2 = function(a, b){
+            const sum = a+b;
+            return sum;
+        }
+
+        sum2 = addNums2(2, 5)
+        console.log(sum2)
+
+        //arrow function - 1
+
+        //if the function body is only one line we dont 
+        //need to use curlys brackets and return keyboard
+        const addNums3 = (a, b)=> a+b; 
+        
+        
+        const sum3 = addNums3(4, 6);
+        console.log(sum3)
+
+        //arrow function - 2
+        const addNums4 = (a, b) =>{
+            const total  = a+b;
+            return total;
+        }
+
+        const sum4 = addNums3(9, 6);
+        console.log(sum4)
+    </script>
+</body>
+</html>

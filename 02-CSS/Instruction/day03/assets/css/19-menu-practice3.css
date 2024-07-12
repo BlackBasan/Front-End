@@ -1,0 +1,36 @@
+h1 {
+    color: violet;
+    text-align: center;
+}
+
+nav.navbar ul {
+    background-color: rgb(211, 211, 211);
+    list-style-type: "🔹";
+    width: 150px;
+    padding: 0;
+    list-style-position: inside;
+}
+
+nav.navbar ul li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* ANCHOR TAG STYLING */
+nav.navbar ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ACTIVE STYLES */
+nav.navbar ul li.active {
+    background-color: black;
+}
+
+nav.navbar ul li.active a {
+    color: white;
+}
+
+nav.navbar ul li:hover {
+    background-color: sandybrown;
+}

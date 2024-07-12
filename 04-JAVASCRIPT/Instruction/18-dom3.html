@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="txtName" placeholder="enter your name" value = "John TOM">
+    <h2 id="welcome"></h2>
+
+    <script>
+        const nameEl = document.querySelector("#txtName");
+        console.log(nameEl.value);
+
+        const welcomeEl = document.querySelector("#welcome");
+        welcomeEl.innerHTML = `<b>Welcome ${nameEl.value}</b>`
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="txtScore" placeholder="enter score">
+    <button id="btnCalculate" onclick="calculate()" >Calculate</button>
+    
+    <script>
+        const scoreEl = document.querySelector("#txtScore")
+        function calculate (){
+
+            const score = Number(scoreEl.value);
+            //short circuit method
+            //using &&
+            //(score<0 || score > 100) && alert("enter valid score");
+
+                //using ||
+                (score>0 && score <100) || alert("enter valid score");
+            
+                //using if method
+                /*
+                if(score > 100 && score < 0){
+                    alert("enter valid score")
+                }
+                */
+
+        }
+
+    </script>
+</body>
+</html>

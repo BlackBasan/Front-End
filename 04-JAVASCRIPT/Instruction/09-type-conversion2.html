@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Conversion</title>
+</head>
+<body>
+    
+    <script>
+
+        const name = "John";
+        console.log(Boolean(name))
+
+        const num1 = 23;
+        console.log(Boolean(num1))
+
+        const num2 = -3;
+        console.log(Boolean(num2))
+
+        const num3 = 0; 
+        console.log(Boolean(num3))
+
+        const empt = ""
+        console.log(Boolean(empt))
+
+        const nullValue = null;
+        console.log(Boolean(nullValue))
+
+        let undef; //undefined
+        console.log(Boolean(undef))
+
+        let nan = Number("234abc"); //NaN
+        console.log(nan, Boolean(nan));
+
+
+    </script>
+</body>
+</html>

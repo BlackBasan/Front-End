@@ -1,0 +1,13 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+
+.container {
+    height: 500px;
+    background-image: url("../img/kena1.png");
+    background-position: bottom right;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-color: red;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const cars = ["Porche", "Porche", "Toyota", "Ferrari"]
+        console.log(cars)
+
+        const newCars = cars.concat(["Honda", "Tesla"], "Hyundai")
+        console.log(cars, newCars)
+
+        const result = cars.includes("Tesla");
+        console.log(result)
+
+        console.log(cars.indexOf("Porche"))
+        console.log(cars.lastIndexOf("Porche"))
+
+        const reslt= cars.join("***")
+        console.log(reslt, typeof (reslt))
+
+        const result1 = cars.toString();
+        console.log(result1)
+
+        console.log(cars)
+        const newArr = cars.slice(0,2);
+        console.log(newArr)
+    </script>
+</body>
+</html>

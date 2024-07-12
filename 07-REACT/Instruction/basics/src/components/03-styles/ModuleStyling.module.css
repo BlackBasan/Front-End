@@ -1,0 +1,16 @@
+.moduleContainerStyle {
+    border: 1px solid violet;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+#moduleHeadingStyle {
+    color: orange;
+    text-align: center;
+}
+
+.module-paragraph-style {
+    color: blue;
+    text-align: center;
+}

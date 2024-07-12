@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let user = {
+            firstName: "John",
+            lastName: "Doe",
+        }
+
+       // user = null; //or undefined
+
+
+        //if method
+        /*
+        if(user ===null || user === undefined){
+            user = {firstName: "Anonymous", lastName: ""}
+        }
+        */
+       //Ternary Method
+        //user = user ===null || user ===undefined ? {firstName: "Anonymous", lastName: ""} : user
+
+
+        //NULLISH 
+        user = user ?? {firstName: "Anonymous", lastName: ""};
+
+        console.log(user)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+    "name": "instruction",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "compile-sass-day1": "sass ./day01/assets/styles/scss:./day01/assets/styles/css",
+        "compile-sass-day2": "sass ./day02/assets/styles/scss:./day02/assets/styles/css",
+        "compile-sass-day3": "sass ./day03/assets/styles/scss:./day03/assets/styles/css",
+        "watch-sass-day1": "sass --watch ./day01/assets/styles/scss:./day01/assets/styles/css",
+        "watch-sass-day2": "sass --watch ./day02/assets/styles/scss:./day02/assets/styles/css",
+        "watch-sass-day3": "sass --watch ./day03/assets/styles/scss:./day03/assets/styles/css"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC"
+}

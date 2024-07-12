@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const prices = [100, 200, 240, 50, 500, 300];
+        const usd = 28.05;
+        const eur = 29.66;
+
+        const usdPrices = prices.map((price)=>(price /  usd).toFixed(2))
+        console.log(usdPrices)
+        const eurPrices = prices.map((price)=>(price /  eur).toFixed(2))
+        console.log(eurPrices)
+    
+    </script>
+</body>
+</html>

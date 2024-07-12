@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <select name="" id="ddlStudents">
+        
+    </select>
+    
+    <script>
+
+    const students = [
+
+        {
+            firstname: "Jim",
+            lastname: "Smith",
+            age: 25,
+        },
+        {
+            firstname: "Joe",
+            lastname: "Bloggs",
+            age: 30,
+        },
+        {
+            firstname: "John",
+            lastname: "Doe",
+            age: 20
+        },
+        {
+            firstname: "Jack",
+            lastname: "Black",
+            age: 40
+        }
+        
+    ]
+    console.log(students)
+    console.log(students[0].firstName)
+    console.log(students[0].lastname)
+
+    const fillSelectOption = ()=>{
+        const ddlStudents = document.querySelector("#ddlStudents");
+        for(let i = 0; i<students.length; i++){
+            ddlStudents.innerHTML += `<option value="">${students[i].firstname}</option>`
+        }    
+    }
+
+    fillSelectOption()
+
+
+    const arr = [3, 5, 6, 5, "sjdhf"] //ref type
+    arr[1] = 9;
+
+    arr = 9;
+    </script>
+
+</body>
+</html>

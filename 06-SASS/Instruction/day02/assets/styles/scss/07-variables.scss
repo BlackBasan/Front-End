@@ -1,0 +1,23 @@
+$colorBg: #333;
+$text-white: #fff;
+$text-primary: blue;
+$border-primary: 1px solid $text-primary;
+$rounded-sm: 5px;
+
+input {
+    background-color: $colorBg;
+    color: $text-white;
+}
+
+button {
+    background-color: transparent;
+    color: $text-primary;
+    border: $border-primary;
+    cursor: pointer;
+    border-radius: $rounded-sm;
+
+    &:hover {
+        background-color: $text-primary;
+        color: $text-white;
+    }
+}

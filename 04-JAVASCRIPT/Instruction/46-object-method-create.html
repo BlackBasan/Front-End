@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        const person = {
+            firstName: "John",
+            lastName: "Doe",
+        }
+
+        const person1 = person;
+        console.log(person);
+        //objects are reference type, so person and person1 
+        // are holding reference of the same object. 
+        //which means in memory there is only one object
+        person1.firstName = "Jim"
+        console.log(person);
+
+        //create method extends properties of object to new obj
+        const person2 = Object.create(person);
+        console.log(person2)
+        console.log(person2.firstName)
+        person2.firstName = "Kerry"
+        console.log(person2.firstName)
+        console.log(person2)
+
+        //when there are the same keys in one object, 
+        //last keys value will remain. in below ex. value of b is 11
+        const obj1 = {a: 3, b:5, c: 4, b: 10, b: 11}
+        console.log(obj1)
+
+        
+    </script>
+</body>
+</html>

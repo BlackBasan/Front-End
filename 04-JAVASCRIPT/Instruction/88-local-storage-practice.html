@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="lblWelcome"></h1>
+
+    <p id="lblCounter"></p>
+
+    <form action="">
+        <input type="text" name="" id="txtName" placeholder="enter your name">
+        <button id="btnSave">Save</button>
+    </form>
+    <script>
+
+        const handleCounter = ()=>{
+            let count = localStorage.getItem("pageCounter")
+            //count = count ? parseInt(count): 0; //ternary
+
+            //count = count ?? 0 //nullish count = count+3 > count+=3
+            count??=0
+            count++;
+
+            localStorage.setItem("pageCounter", count)
+            document.getElementById('lblCounter').textContent = `You visited this page ${count} times.`
+
+        }
+
+        const handleMessage = () => { 
+            const name = localStorage.getItem("name");
+            document.getElementById("lblWelcome").innerHTML = `Welcome to my web page, ${name ?? 'Guest' }`
+         }
+
+         handleMessage();
+
+        document.getElementById("btnSave").addEventListener("click", ()=>{
+            const name = document.getElementById("txtName").value;
+            localStorage.setItem("name", name)
+        })
+
+        handleCounter();
+    </script>
+</body>
+</html>

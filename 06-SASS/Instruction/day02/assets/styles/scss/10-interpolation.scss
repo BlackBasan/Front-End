@@ -1,0 +1,15 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.icon {
+    @include m.avatar();
+    background-color: orangered;
+}
+
+// #{$variableName} - sass interpolation
+
+.icon-#{v.$arrow-down} {
+    background-color: aqua;
+}
+
+// `${variableName}` - javascript interpolation

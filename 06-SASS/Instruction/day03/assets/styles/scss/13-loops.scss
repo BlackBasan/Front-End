@@ -1,0 +1,23 @@
+@use "variables" as v;
+
+@for $i from 1 through 4 {
+    .icon-#{$i} {
+        background-image: url("../../images/icon-#{$i}.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@each $item in v.$icons {
+    .icon-#{$item} {
+        background-image: url("../../images/icon-#{$item}.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 100px;
+        height: 100px;
+    }
+}

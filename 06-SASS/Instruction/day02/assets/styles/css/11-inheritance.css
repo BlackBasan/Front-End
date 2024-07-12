@@ -1,0 +1,23 @@
+.btn-submit, .btn-reset {
+  height: 50px;
+  width: 200px;
+  color: red;
+  border: 1px solid red;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-submit:hover, .btn-reset:hover {
+  background-color: red;
+  color: #fff;
+}
+
+.btn-reset {
+  color: blue;
+  border: 1px solid blue;
+}
+.btn-reset:hover {
+  background-color: blue;
+  color: #fff;
+}
+
+/*# sourceMappingURL=11-inheritance.css.map */

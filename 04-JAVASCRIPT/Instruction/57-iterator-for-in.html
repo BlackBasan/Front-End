@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const firstName = ["Sauron", "Frado", "Galadriel", "Aragon"]
+        const lastName = ["Mordor", "Shire", "Valinor", "Rivendell"]
+
+        //usage of "for in"
+        for(let index in firstName){
+            console.log(index, firstName[index])
+        }
+
+        const fullName = ["Sauron Mordor", "Frado Shire"]
+
+        for(let i in firstName){
+            fullName[i] = `${firstName[i]}  ${lastName[i]}`
+        }
+        console.log( fullName)
+        
+    
+    </script>
+</body>
+</html>

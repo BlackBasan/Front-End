@@ -1,0 +1,16 @@
+.external-styling-container {
+    border: 1px solid red;
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.external-styling-container h1 {
+    text-align: center;
+    color: aquamarine;
+}
+
+#external-styling-list {
+    list-style-type: none;
+    padding: 0;
+}

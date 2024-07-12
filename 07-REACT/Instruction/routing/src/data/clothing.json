@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Jacket",
+        "text": "Nice jacket you can wear when you are cold, or want to be cool",
+        "imgUrl": "https://www.fifecountry.co.uk/images/product_images/main_A469.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Suit",
+        "text": "You can wear this suit in any occassion so you can look good",
+        "imgUrl": "https://www.realmenrealstyle.com/wp-content/uploads/2023/08/How-To-Buy-The-Right-Watch-Sizes-For-Your-Wrist.jpg"
+    },
+    {
+        "id": 3,
+        "title": "T-shirt",
+        "text": "You can wear this t-shirt when you are hot, or want to be cool",
+        "imgUrl": "https://img.freepik.com/free-photo/portrait-young-blonde-woman-white-t-shirt_273609-11508.jpg"
+    }
+]

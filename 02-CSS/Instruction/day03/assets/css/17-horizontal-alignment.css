@@ -1,0 +1,38 @@
+h1 {
+    color: greenyellow;
+    text-align: center;
+    background-color: black;
+}
+
+.container {
+    height: 500px;
+    background-color: darkkhaki;
+}
+
+.box {
+    width: 300px;
+    height: 100px;
+    color: white;
+}
+
+.box1 {
+    background-color: blue;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.box2 {
+    background-color: greenyellow;
+    color: black;
+    /* 
+        margin-left: auto;
+        margin-right: auto;
+    */
+    margin: 0 auto;
+}
+
+.box3 {
+    background-color: brown;
+    margin-left: 0;
+    margin-right: auto;
+}

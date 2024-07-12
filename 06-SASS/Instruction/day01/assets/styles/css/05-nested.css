@@ -1,0 +1,15 @@
+header {
+  font-size: 20px;
+}
+header nav {
+  padding: 10px;
+}
+header nav a {
+  color: blue;
+}
+
+nav a {
+  color: red;
+}
+
+/*# sourceMappingURL=05-nested.css.map */

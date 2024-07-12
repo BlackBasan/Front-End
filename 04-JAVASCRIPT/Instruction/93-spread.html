@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let student = {
+            firstName: "John",
+            lastName: "Doe",
+            age: 33
+        }
+
+        //reference type
+        const student2 = student;
+
+        //shallow copy
+        const student1 = {
+            ...student,
+            score: 99};
+        student1.firstName= "Jerry"
+        console.log(student)
+        console.log(student1)
+
+        const studentd3={
+            ...student1, 
+            lastName: "Frank", 
+            hobbies: ["music","reading"]
+        }
+        console.log(studentd3)
+
+
+
+    </script>
+</body>
+</html>

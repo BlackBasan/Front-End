@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="txtNumber" placeholder="enter number">
+    <button onclick="calculateSum()">Calculate</button>
+    <h3 id="result"></h3>
+
+    <script>
+        const numberEl = document.querySelector("#txtNumber");
+
+        function calculateSum(){
+            let total = 0;
+            let num = Number(numberEl.value);
+            //Math.abs() method to get absalute value of number
+            num = Math.abs(num); //-98 -->98 
+            //6731 = 6+7+3+1
+
+            //use while when it is not clear how many times loop should be repeated 
+            while(num>0){
+                const digit = num % 10 //gives last digit 
+                total += digit  //total+digit 1
+                num = Math.floor(num/10) //gives us only integer part
+            }
+
+            document.querySelector("#result").innerText = `Sum of digits is: ${total}`
+        }
+    </script>
+
+</body>
+</html>

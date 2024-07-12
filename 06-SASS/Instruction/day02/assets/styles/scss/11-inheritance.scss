@@ -1,0 +1,26 @@
+@use "variables" as v;
+
+.btn-submit {
+    height: 50px;
+    width: 200px;
+    color: v.$text-secondary;
+    border: v.$border-secondary;
+    border-radius: v.$rounded-sm;
+    cursor: pointer;
+
+    &:hover {
+        background-color: v.$text-secondary;
+        color: #fff;
+    }
+}
+
+.btn-reset {
+    @extend .btn-submit;
+    color: v.$text-primary;
+    border: 1px solid v.$text-primary;
+
+    &:hover {
+        background-color: v.$text-primary;
+        color: #fff;
+    }
+}

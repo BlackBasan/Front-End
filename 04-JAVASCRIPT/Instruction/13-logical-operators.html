@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let x = false;
+        let y = true;
+        let z = true;
+        let k = "false";
+        let l = null;
+        let m = "cat";
+        let n = "mouse";
+        let o = "true"
+
+
+        console.log(y && z && x) //false
+        console.log(y && z || x) //true
+        
+        const com3 = x || k;
+        console.log(com3) //"false"
+
+        const com5 = k || x;
+        console.log(com5) //"false"
+        
+        const com4 = x || n
+        console.log(com4) //mouse 
+
+        const com6 = y && z  && n; 
+        console.log(com6) //mouse
+
+        const com7 = y && x && z  && n; 
+        console.log(com7) //mouse
+
+        const com8 = y && null && z  && n; 
+        console.log(com8) //null --> false
+
+
+        const com9 = y && !0 && z  && n; 
+        console.log(com9) //0-->false
+
+        const com10 = y && undefined && z  && n; 
+        console.log(com10) //undefined-->false
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+    //******** Declaration Function **********
+        sayHello1();
+        function sayHello1 (){  
+       //     alert("Hello 1")
+        }
+
+    //******** Expression Function **********
+        
+        const sayHello2 = function(){
+            alert("Hello 2")
+        }
+
+       // sayHello2() 
+        /*
+
+        --in expression method, we cannot call 
+            function before the function itself
+        --so functions must be defined before it is called
+        --because there is no hoiting in expression method
+        */
+    
+        
+        //******** var variables **********
+
+        /*
+            when we declare a variable using var keyboard,
+            there is hoisting.. 
+            but variables declared with let and const, 
+            there is no hoisting
+        */
+
+        
+       
+        console.log(y)
+        var y = 5;
+        
+
+        console.log(x)
+        const x = 10;
+
+        console.log("hi")
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let globalScopeVariable = 33;
+
+        let x = 5; 
+
+        const funct1 = ()=>{
+            
+            let functionScopeVariable = 11;
+            console.log(globalScopeVariable + functionScopeVariable)
+
+            let x = 10; // x is new varialbe in function scope
+
+
+            if(true){
+                const c = "hello"
+            }
+
+        } //ends function scope
+       // console.log(functionScopeVariable) --> we cannot reach out function variables from outside of function
+       console.log("x: ", x)
+        
+       funct1()
+
+
+        console.log("x: ", x)
+
+        
+
+        if(globalScopeVariable > 20){
+            var blockSopeVariable = 30;
+        }
+        console.log(blockSopeVariable)
+        
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+.square {
+  width: 10rem;
+  height: 10rem;
+}
+
+.circle {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+}
+
+/*# sourceMappingURL=12-conditional-statement.css.map */

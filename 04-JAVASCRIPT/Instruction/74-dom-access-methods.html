@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <h1>DOM</h1>
+    </header>
+
+    <main>
+        <ul  class="list" id="liItems">
+            <li>Home<span>🔁</span></li>
+            <li>bout Us<span>🔁</span></li>
+            <li>Contact us<span>🔁</span></li>
+            <li>Products<span>🔁</span></li>
+            <li>History<span>🔁</span></li>
+        </ul>
+    </main>
+    <script>
+        const spanEls = document.querySelectorAll(".list li span")
+        
+        spanEls.forEach((span)=>{
+            span.addEventListener("click", (e)=>{
+                const li = e.target.closest("li")
+                li.style.backgroundColor = "yellow"
+            })
+        })
+
+        //cloesest will take us to the closest matching parent class
+        const headerEl= document.querySelector(".list li:nth-child(3)").closest("body").querySelector("header")
+        console.log(headerEl)
+
+        //children
+        const liItems = document.getElementById("liItems");
+        console.log(liItems)
+        console.log(liItems.children) //return array of elements
+
+        console.log(liItems.childNodes)// return array nodes (elemnts+enters+texts)
+
+        console.log(liItems.firstElementChild.innerText)
+        console.log(liItems.lastElementChild.innerText)
+        liItems.lastElementChild.innerText = "Histories"
+        console.log(liItems.parentElement.parentElement)
+
+        console.log(document.querySelector(".list li:nth-child(3)").previousElementSibling.innerText)
+        console.log(document.querySelector(".list li:nth-child(3)").nextElementSibling.innerText)
+
+    </script>
+</body>
+</html>

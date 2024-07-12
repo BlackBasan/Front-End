@@ -1,0 +1,42 @@
+h1 {
+  color: red;
+  text-align: center;
+}
+
+.alert ul,
+.alert p,
+.warning ul,
+.warning p {
+  color: red;
+  background-color: yellowgreen;
+}
+
+ul > li {
+  color: blue;
+  background-color: yellow;
+}
+ul:hover {
+  color: violet;
+}
+
+.warning-xl {
+  color: aqua;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 200px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  background-color: antiquewhite;
+}
+.container-fluid {
+  max-width: 100%;
+}
+.container-sm {
+  max-width: 576px;
+}
+
+/*# sourceMappingURL=06-style-rules.css.map */

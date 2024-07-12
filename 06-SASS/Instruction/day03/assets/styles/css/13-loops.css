@@ -1,0 +1,73 @@
+.icon-1 {
+  background-image: url("../../images/icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+}
+
+.icon-2 {
+  background-image: url("../../images/icon-2.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+}
+
+.icon-3 {
+  background-image: url("../../images/icon-3.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+}
+
+.icon-4 {
+  background-image: url("../../images/icon-4.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+}
+
+.icon-menu {
+  background-image: url("../../images/icon-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+}
+
+.icon-moon {
+  background-image: url("../../images/icon-moon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+}
+
+.icon-uv {
+  background-image: url("../../images/icon-uv.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+}
+
+.icon-video {
+  background-image: url("../../images/icon-video.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 100px;
+  height: 100px;
+}
+
+/*# sourceMappingURL=13-loops.css.map */

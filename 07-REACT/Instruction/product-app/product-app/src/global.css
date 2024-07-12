@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+html,
+body,
+#root, 
+main {
+    height: 100%;
+    color: white;
+    background-color: rgb(5, 5, 22);
+}
+
+#root{
+    padding: 1rem 0.5rem;
+}

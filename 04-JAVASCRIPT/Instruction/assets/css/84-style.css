@@ -1,0 +1,17 @@
+.search-bar{
+    position: relative;
+}
+
+.search-bar ul{
+  border: 1px solid rgb(206, 203, 203); 
+  border-radius: 5px; 
+  list-style-type: none;
+  padding: 10px 20px;
+  line-height: 30px;
+  position: absolute;
+  z-index: 99;
+  right: 0;
+  left: 0;
+  margin: 0;
+  display: none;
+}

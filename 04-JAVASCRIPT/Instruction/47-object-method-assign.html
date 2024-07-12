@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        const car1 = {
+            brand: "Ford",
+            model: "Fiesta",
+            year: 2020,
+            color: "red",
+            price: "$5000",
+        }
+
+        const car2={
+            brand:"Toyota",
+            model: "Corollo",
+            year: 2019,
+            color: "blue",
+            doors: 5
+
+        }
+
+        const car3 = Object.assign(car1, car2);
+        console.log(car3)
+        console.log(car3 === car1)  
+        const car4 = car1 //it will not create copy of object 
+        console.log(car4 === car1)
+
+        //to create shallow copy / new object
+
+        const car5 = Object.assign({}, car3)
+        console.log(car5)
+        console.log(car5 === car3)
+    </script>
+</body>
+</html>

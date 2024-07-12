@@ -1,0 +1,27 @@
+h1 {
+    color: purple;
+    text-align: center;
+}
+
+span {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.home {
+    color: rgb(12, 175, 0);
+}
+
+.facebook::before {
+    font: var(--fa-font-brands);
+    content: "\f09a";
+    margin-right: 10px;
+    color: blue;
+}
+
+.youtube::before {
+    font: var(--fa-font-brands);
+    content: "\f167";
+    margin-right: 10px;
+    color: red;
+}

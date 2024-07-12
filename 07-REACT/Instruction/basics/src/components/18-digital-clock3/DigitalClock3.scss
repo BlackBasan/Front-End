@@ -1,0 +1,22 @@
+.digital-clock {
+    margin: 2rem 0;
+    font-family: "Digital";
+    background-color: rgb(37, 37, 37);
+    border-radius: 0.5rem;
+    color: chartreuse;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    font-size: 2rem;
+
+    .day {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .time {
+        font-size: 5rem;
+    }
+}

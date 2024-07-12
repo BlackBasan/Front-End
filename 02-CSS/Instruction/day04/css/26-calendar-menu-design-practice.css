@@ -1,0 +1,48 @@
+h1 {
+    color: red;
+    text-align: center;
+}
+
+.menu-container {
+    background-color: rgb(246, 197, 107);
+}
+
+.menu-container ul {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+.menu-container ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.menu-container ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-container ul li a::after {
+    content: " |";
+    color: rgb(165, 85, 42);
+    margin-left: 20px;
+}
+
+.menu-container ul li:last-child a::after {
+    content: " ▶";
+    color: black;
+    font-size: 0.8rem;
+}
+
+.menu-container ul li:first-child a::before {
+    content: "◀ ";
+    color: black;
+    font-size: 0.8rem;
+    margin-right: 20px;
+    margin-left: 0px;
+}
+
+.menu-container ul li a:hover {
+    color: black;
+}

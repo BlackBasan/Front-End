@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const firstName = ["Sauron", "Frado", "Galadriel", "Aragon"]
+        const lastName = ["Mordor", "Shire", "Valinor", "Rivendell"]
+
+        //usage of "for in"
+        for(let index in firstName){
+            console.log(index)
+        }
+        //usage of "for of"
+        for(let name of firstName){
+            console.log(name)
+        }
+    
+        //if we need index number
+        for(let name of firstName){
+            console.log(name, firstName.indexOf(name))
+        }
+
+        /*
+        firstName.entries() =
+        [
+            [0, "Sauron"],
+            [1, "Frado"],
+            [2, "Galadriel"]
+        ]
+        */
+
+        for(let [i, name] of firstName.entries()){
+            console.log(i, name)
+        }
+
+        
+
+        
+        //using for of we can iterate every characters of string
+        for(let char of "Hello Javascript"){
+            console.log(char)
+        }
+        
+
+    </script>
+</body>
+</html>

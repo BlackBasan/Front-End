@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const calculatePrice = (price, vat, discount ) => {
+            if(!price || isNaN(price) || !vat || isNaN(vat) || !discount || isNaN(discount)) return;
+            //return --> returns to the place where it is called without any value
+            //next lines in a function will not be continued
+
+            price = Number(price);
+            vat = Number(vat);
+            discount = Number(discount);
+
+
+            if(discount <= 0) vat = 0; 
+            if(price > 1500) discount += 10;
+            
+            const totalTax =  price * vat / 100; //360
+            const totalDiscount  = price * discount/100; //500
+
+            const finalPrice = price + totalTax - totalDiscount;
+            return finalPrice;
+        }
+
+        console.log( calculatePrice (2000, 18, 15))
+        console.log( calculatePrice (2000, 18, null))
+
+        const price  =  prompt("enter product price")
+        const vat  =  prompt("enter vat rate")
+        const discount  =  prompt("enter disctount rate")
+
+        console.log( calculatePrice (price, vat, discount))
+    </script>
+</body>
+</html>

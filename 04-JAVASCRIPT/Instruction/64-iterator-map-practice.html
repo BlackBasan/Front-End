@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const prices = [100, 200, 240, 50, 500, 300];
+
+        const newPrice = prices.map((p)=>{
+            if(p>=100){
+                p = (p*1.15).toFixed(2);
+            }else{
+                p = (p*1.10).toFixed(2)
+            }
+            return p;
+        })
+
+        console.log(newPrice)
+
+        //map will return the array which will have the same legnth
+        const highPrice = prices.map((p)=>{
+            if(p>200){
+                return p
+            }
+        })
+        console.log(highPrice)
+    </script>
+</body>
+</html>
